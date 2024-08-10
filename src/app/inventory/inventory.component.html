@@ -1,0 +1,98 @@
+<h1>Inventory</h1>
+<button type="button" (click)="addItem()">Add Item</button>
+
+<div class="container">
+  <table id="mytable">
+    <tbody>
+      <tr>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div
+  class="frm"
+  [formGroup]="userform"
+  [ngStyle]="{ display: formDisplay }"
+  (ngSubmit)="submit(updt.value)"
+>
+  <form>
+    <div class="boxes">
+      <div>Item Name : <input type="text" formControlName="iname" /></div>
+      <div>
+        Quantity : <input type="text" id="qnty" formControlName="quantity" />
+      </div>
+    </div>
+    <div class="bts">
+      <div>
+        <button
+          type="submit"
+          [disabled]="!userform.valid || !isSubButtonActive"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div>
+        <button
+          type="submit"
+          #updt
+          [disabled]="!userform.valid || !isEditButtonActive"
+          [value]="updateId"
+        >
+          Update
+        </button>
+      </div>
+
+      <div><button type="button" (click)="cancel()">Cancel</button></div>
+    </div>
+  </form>
+</div>
+
+<div class="checkout">
+  <button type="button" (click)="checkout(); list()">Checkout</button>
+</div>
+
+<div class="bill" [ngStyle]="{ display: cartDisplay }">
+  <span id="heading">Hunger Parade</span>
+  <div id="dropdown">
+    <label for="food-items">Choose Item: </label>
+    <select name="food-items" id="food-items" #itm></select>
+
+    <label for="quant-items">Choose Quantity: </label>
+    <select name="quant-items" id="quant-items" #qnt>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <button type="button" id="cartbtn" (click)="cartAdd(itm.value, qnt.value)">
+      Add to Cart
+    </button>
+  </div>
+
+  <table id="carttable">
+    <tbody>
+      <tr>
+        <th>Items</th>
+        <th>Quantity</th>
+        <th>Cost</th>
+        <th>Price</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="totalAmt">Total Amount is : {{ total }}</div>
+
+  <div class="lbtns">
+    <button type="button" (click)="canc()">Cancel</button>
+    <button type="button" (click)="gen()">Generate bill</button>
+  </div>
+</div>
+

@@ -1,0 +1,161 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.container{
+    position: relative;
+}
+
+.frm{
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    background-color: burlywood;
+    z-index: 10;
+    display: initial;
+    /* background-image: url("https://hips.hearstapps.com/hmg-prod/images/online-buying-and-delivery-concept-royalty-free-image-1675370119.jpg?crop=0.74996xw:1xh;center,top&resize=1200:*"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+}
+
+.boxes input{
+    margin-left: 10px;
+}
+
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: x-large;
+    text-align: justify;
+    margin-top: 35%;
+    color: black;
+    margin-left: 14%;
+
+}
+
+input{
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.bts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: baseline;
+    margin-right: 10px;
+}
+
+#qnty{
+    margin-left: 31px
+}
+
+.bts button{
+    margin-right: 10px;
+}
+.bts button:disabled{
+    background-color: dimgray;
+}
+
+.checkout{
+    margin-right: 1vw;
+    text-align: right;
+}
+
+
+.bill{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background-color: darkseagreen;
+    z-index: 10;
+    top: 10%;
+    left: 30%;
+    padding: 1vw;
+    /* top: 0;
+    right: 0; */
+    text-align: center;
+    border: 1px solid darksalmon;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#heading{
+    font-size: 3vw;
+}
+
+#dropdown{
+    margin: 0 auto;
+    margin-top: 2vw;
+    
+}
+select{
+    margin-right: 2vw;
+}
+
+#cartbtn{
+    font-size: medium;
+    background-color: rgb(21, 131, 175);
+    color: white;
+
+}
+
+#cartbtn:hover{
+    background-color: #4CAF50;
+}
+
+#carttable th, td, tr{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 2px solid #ddd;
+}
+
+#carttable{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 10px;
+    text-align: left;
+}
+
+#carttable th, td {
+    padding: 2px;
+}
+
+.lbtns {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.totalAmt{
+    left: 20px;
+    right: 20px;
+    bottom: 20%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.75vw;
+}
+
+label{
+    margin-right: 0.12vw;
+}

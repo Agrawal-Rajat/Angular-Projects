@@ -1,0 +1,105 @@
+.heading{
+    position: relative;
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cname{
+    font-size: 45px;
+    color: rgb(13, 96, 192);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.invoice{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.cbody, .ibody, .billtobody, .msg{
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-family: none;
+    background-color:white;
+    border-color: white;
+}
+
+.billto{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hbill{
+    width: 30%;
+    font-size: 23px;
+    background-color: rgb(26, 132, 214);
+    color: white;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px;
+}
+
+.tbl{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#billtable th{
+    background-color: rgb(26, 132, 214);
+    padding: 2px;
+    color: white;
+    font-weight: 500;
+}
+
+#billtable td{
+    font-weight: 200;
+    padding: 2px;
+    color: black;
+    background-color: rgb(233, 219, 219);
+}
+
+.tot{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    font-family: none;
+}
+
+.amt{
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.footer{
+    margin: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bmsg{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+
+.img{  
+    position: absolute;
+    top: 0;
+    right: 35vw;
+    margin: 5vw;
+    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/print-flat.png");
+    height: 65px;
+    width: 65px;
+    background-size: cover;
+    cursor: pointer;
+}

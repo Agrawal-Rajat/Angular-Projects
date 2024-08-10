@@ -1,0 +1,104 @@
+<div id="tdwn">
+  <div class="heading">
+    <div class="cname">
+      Hunger Parade
+      <div class="cbody">
+        Vijay Nagar <br />
+        Indore, 452010 <br />
+        Phone: 123-456-7890 <br />
+        Fax: 890-222-3432 <br />
+        Website:
+        <a href="#" style="text-decoration: none">www.HungerParade.com</a>
+      </div>
+    </div>
+    <div class="invoice">
+      INVOICE
+      <div class="ibody">
+        Date: {{ formattedDate }} <br />
+        Invoice #: {{ inum }} <br />
+        Customer ID: {{ cid }} <br />
+        Due Date: {{ formattedDatethree }}
+      </div>
+    </div>
+  </div>
+
+  <div class="billto">
+    <div class="hbill">
+      BILL TO
+      <div class="billtobody">
+        Suraj Mehta
+        <br />
+        Raddison blu
+        <br />
+        Indore, 452011
+        <br />
+        Phone: 453-472-2323
+      </div>
+    </div>
+  </div>
+
+  <div class="tbl">
+    <table id="billtable">
+      <tbody>
+        <tr>
+          <th>Item</th>
+          <th>Qunatity</th>
+          <th>Cost</th>
+          <th>Price</th>
+        </tr>
+        
+        @for(item of billData; track item){
+          <tr>
+            <td>{{item.citems}} </td>
+            <td>{{item.cquant}}</td>
+            <td>{{item.ccost}}</td>
+            <td>{{item.cprice}}</td>
+          </tr>
+        }
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="tot">
+    <div class="hbill" style="width: 60%">
+      Other Comments
+      <div class="billtobody">
+        1.Total payment due in 3 days
+        <br />
+        2.Please note down the invoice number for further complains if any
+      </div>
+    </div>
+
+    <div class="amt">
+      Price: Rs.{{price}}
+      <br />
+      GST: Rs.{{gst}}
+      <br />
+      Shipping Charges: Rs.20
+      <br />
+      Bill Amount is : {{total}}
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="msg">
+      if you have any questions about this invoice, please contact
+      <div
+        style="
+          text-align: center;
+          color: rebeccapurple;
+          text-decoration: underline;
+        "
+      >
+        hungerparadegmail.com
+      </div>
+      <div class="bmsg">Thank You For Business!</div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="img" (click)="download()"></div>
+
+  
